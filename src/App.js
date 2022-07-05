@@ -2,11 +2,10 @@ import './App.css';
 import Button from './componentes/Boton';
 import Pantalla from './componentes/Pantalla';
 import BotonClear from './componentes/BotonClear';
-import Popup from './componentes/Popup';
-import logo from './imagenes/logo.png';
+import imagenLogo from './imagenes/logo.png';
+import Logo from './componentes/Logo';
 import {useState} from 'react';
 import { evaluate } from 'mathjs';
-import { ReactDOM } from 'react';
 
 function App() {
   
@@ -16,32 +15,19 @@ function App() {
     setInput(input + value);
   }
 
-  const closePopup = () => document.querySelector('.popup').close();
-
-  const popup = <dialog className='popup'>
-  <p className='text-popup'>Por favor escríba un valor para calcular</p>
-  <button className='btn-popup'></button>
-</dialog>
-
   const resultado = () => {
     const expValidator = new RegExp(/[0-9][0-9+-/*]*[0-9]$/)
     if (expValidator.test(input)) {
       setInput(evaluate(input));
     } else {
-      // alert('Caracteres no permitidos al inicio');
-      const appContainer = ReactDOM.document.querySelector('.App');
-      appContainer.appendChild(popup);
+      alert('Caracteres no permitidos al inicio');
     }
   };
 
   return (
     <div className="App">
-      <div className='container-logo'>
-        <img
-          src={logo}
-          className='logo'
-          alt='logo luissdev' />
-      </div>
+      <Logo 
+        logo = {imagenLogo} />
       <div className='container-calc'>
         <div className='calc'>
           <Pantalla 

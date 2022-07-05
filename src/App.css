@@ -8,20 +8,6 @@
   margin: 0 auto;
 }
 
-.container-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-.logo {
-  width: 50%;
-  height: auto;
-  margin-top: 1rem;
-}
-
 .container-calc {
   display: flex;
   justify-content: center;
