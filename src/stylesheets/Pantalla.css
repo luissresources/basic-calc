@@ -1,5 +1,5 @@
 .input {
-    height: 10rem;
+    height: 11rem;
     background-color: var(--grayDark);
     border: 3px solid var(--white);
     border-radius: 5px;
@@ -7,10 +7,14 @@
     justify-content: flex-end;
     align-items: center;
     color: var(--black);
-    margin: 2rem auto;
     font-size: 5rem;
     font-weight: 500;
     padding: 0.7rem;
     overflow-x: hidden;
     font-family: monospace;
+    width: 100%;
+    white-space: initial;
+    overflow-wrap:anywhere;
+    overflow-y:auto
+    
 }

@@ -13,3 +13,8 @@
     cursor: pointer;
     user-select: none;
 }
+
+.button-clear:hover {
+    background-color: #F87D09;
+    transition: 0.1s;
+}
