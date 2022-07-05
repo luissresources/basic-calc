@@ -8,6 +8,12 @@
   margin: 0 auto;
 }
 
+@media (min-width: 768px){
+    .App {
+      width: 40rem;
+    }
+}
+
 .container-calc {
   display: flex;
   justify-content: center;
