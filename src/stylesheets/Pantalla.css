@@ -1,0 +1,16 @@
+.input {
+    height: 10rem;
+    background-color: var(--grayDark);
+    border: 3px solid var(--white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--black);
+    margin: 2rem auto;
+    font-size: 5rem;
+    font-weight: 500;
+    padding: 0.7rem;
+    overflow-x: hidden;
+    font-family: monospace;
+}
